@@ -167,7 +167,6 @@ header {
 	}
 }
 .TOKENOMICS {
-	margin-bottom: 250/1400 * 100%;
 	h2 {
 		position: relative;
 		z-index: 2;
@@ -290,7 +289,55 @@ header {
 	}
 }
 
+.pro-list {
+	display: flex;
+	margin-bottom: 180/1400 * 100%;
+	justify-content: end;
+	padding-top: 20px;
+	gap: 20px;
+	img {
+		height: 70px;
+	}
+	@media (max-width: 577px) {
+		gap: 10px;
+		img {
+			height: 40px;
+		}
+	}
+}
+.footer-page {
+	background: rgb(163, 194, 90) url(../image/wave.png) no-repeat 0 bottom;
+	background-size: 100% auto;
+	border-radius: 60px 60px 0 0;
+
+	.ft {
+		display: flex;
+		padding-top: 85/1400 * 100%;
+		.img {
+			padding: 0 20px;
+			width: 282px;
+		}
+		.txt {
+			padding-left: 60px;
+			flex: 1;
+		}
+		h2 {
+			margin-top: -15px;
+		}
+		h3 {
+			padding: 20px 0;
+			font-size: 32px;
+		}
+		p {
+			font-size: 18px;
+			line-height: 30px;
+			margin-bottom: 20px;
+		}
+	}
+}
+
 .buy {
+	margin-bottom: 59/1400 * 100%;
 	h2 {
 		display: flex;
 		align-items: center;
@@ -321,7 +368,7 @@ header {
 
 		li {
 			position: relative;
-			width: 20%;
+			width: 25%;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
