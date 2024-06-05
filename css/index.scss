@@ -1,3 +1,6 @@
+html {
+	scroll-behavior: smooth;
+}
 svg {
 	vertical-align: middle;
 }
@@ -7,7 +10,8 @@ img {
 .bg {
 	width: 100%;
 	min-height: 100vh;
-	background: rgb(0, 44, 2);
+	background: rgb(0, 44, 2) url(../image/bg.png) repeat-y;
+	background-size: 100% auto;
 	color: #fff;
 	font-size: 16px;
 	font-family: 'Margarine';
@@ -245,7 +249,7 @@ header {
 			font-size: 70px;
 			color: rgb(255, 152, 57);
 			font-weight: bold;
-			margin-bottom: 20/870 * 100%;
+			margin: 20/870 * 100% 0;
 		}
 		ul {
 			color: rgb(51, 51, 51);
@@ -275,6 +279,9 @@ header {
 				padding: 0 40px 0 0px;
 				font-size: 20px;
 				color: #000;
+				img {
+					vertical-align: middle;
+				}
 			}
 			.line {
 				flex: 1;
@@ -401,6 +408,7 @@ header {
 		h2 {
 			font-size: 28px;
 			padding: 35px 0;
+			margin-bottom: 0;
 		}
 		p {
 			flex-grow: 1;
