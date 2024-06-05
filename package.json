@@ -1,0 +1,79 @@
+{
+	"name": "vue-element-admin",
+	"version": "4.3.1",
+	"description": "A magical vue admin. An out-of-box UI solution for enterprise applications. Newest development stack of vue. Lots of awesome features",
+	"author": "Pan <panfree23@gmail.com>",
+	"scripts": {
+		"dev": "vue-cli-service serve",
+		"lint": "eslint --ext .js,.vue src",
+		"build:prod": "vue-cli-service build",
+		"build:stage": "vue-cli-service build --mode staging",
+		"preview": "node build/index.js --preview",
+		"new": "plop",
+		"svgo": "svgo -f src/icons/svg --config=src/icons/svgo.yml",
+		"test:unit": "jest --clearCache && vue-cli-service test:unit",
+		"test:ci": "npm run lint && npm run test:unit",
+		"lint:fix": "eslint --fix  --ext .js,.vue src"
+	},
+	"dependencies": {
+		"gulp": "^4.0.2",
+		"gulp-minify-css": "^1.2.4",
+		"gulp-rev-qn": "^1.0.8",
+		"gulp-tap": "^2.0.0",
+		"qs": "^6.10.1",
+		"three": "^0.137.1"
+	},
+	"devDependencies": {
+		"babel-core": "^6.26.3",
+		"babel-preset-es2015": "^6.24.1",
+		"browser-sync": "^2.18.12",
+		"browsersync-ssi": "^0.2.4",
+		"del": "^6.0.0",
+		"gulp-autoprefixer": "^4.0.0",
+		"gulp-babel": "^7.0.1",
+		"gulp-cdn": "^1.1.3",
+		"gulp-clean-css": "^3.3.1",
+		"gulp-css-path": "^1.0.0",
+		"gulp-minify-html": "^1.0.6",
+		"gulp-rev-collector-dxb": "^1.3.2",
+		"gulp-rev-dxb": "^9.0.1",
+		"gulp-ruby-sass": "^2.1.1",
+		"gulp-sourcemaps": "^2.6.0",
+		"http-proxy-middleware": "^2.0.1"
+	},
+	"browserslist": [
+		"> 1%",
+		"last 2 versions",
+		"IE 10"
+	],
+	"bugs": {
+		"url": "https://github.com/PanJiaChen/vue-element-admin/issues"
+	},
+	"engines": {
+		"node": ">=8.9",
+		"npm": ">= 3.0.0"
+	},
+	"keywords": [
+		"vue",
+		"admin",
+		"dashboard",
+		"element-ui",
+		"boilerplate",
+		"admin-template",
+		"management-system"
+	],
+	"license": "MIT",
+	"lint-staged": {
+		"src/**/*.{js,vue}": [
+			"eslint --fix",
+			"git add"
+		]
+	},
+	"husky": {
+		"hooks": {}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/PanJiaChen/vue-element-admin.git"
+	}
+}
