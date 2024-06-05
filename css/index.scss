@@ -103,15 +103,24 @@ header {
 .cong {
 	overflow: hidden;
 	margin-bottom: 45/1400 * 100%;
-	div {
+	.box {
 		width: 500%;
-		span {
+		.ani {
 			display: inline-flex;
 			animation: a linear 20s infinite;
+			span {
+				margin-right: 60px;
+			}
 		}
 	}
-	img {
-		// margin: 0 1%;
+	@media (max-width: 577px) {
+		.box {
+			.ani {
+				span {
+					margin-right: 30px;
+				}
+			}
+		}
 	}
 }
 @keyframes a {
@@ -309,7 +318,7 @@ header {
 	background: rgb(163, 194, 90) url(../image/wave.png) no-repeat 0 bottom;
 	background-size: 100% auto;
 	border-radius: 60px 60px 0 0;
-
+	padding-bottom: 40px;
 	.ft {
 		display: flex;
 		padding-top: 85/1400 * 100%;
@@ -350,6 +359,9 @@ header {
 		a {
 			line-height: 0;
 			text-align: center;
+			span {
+				display: inline-block;
+			}
 		}
 		.img-1 {
 			position: relative;
