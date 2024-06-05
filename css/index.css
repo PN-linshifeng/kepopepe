@@ -10,6 +10,10 @@ img {
   max-width: 100%;
 }
 
+.no-filter {
+  filter: blur(0px) !important;
+}
+
 .bg {
   width: 100%;
   min-height: 100vh;
@@ -30,11 +34,12 @@ img {
 header {
   display: flex;
   padding: 20px 20px 40px !important;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 header .logo {
   width: 206px;
+  line-height: 0;
 }
 header .nav {
   flex: 1;
@@ -95,11 +100,100 @@ header .show-phone {
   width: 32px;
   display: none;
 }
+@media (max-width: 768px) {
+  header {
+    position: fixed;
+    height: 65px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px 20px 0px !important;
+    padding: 20px;
+    z-index: 999;
+  }
+  header .nav {
+    display: none;
+  }
+  header .show-phone {
+    display: block;
+  }
+  header .close {
+    display: none;
+  }
+}
+@media (max-width: 577px) {
+  header .share {
+    display: none !important;
+  }
+  header .logo {
+    width: 140px;
+  }
+}
+
+.nav-box {
+  z-index: 99;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  transform: translateX(-100%);
+  width: 70%;
+  background: rgba(162, 193, 89, 0.7);
+  text-align: center;
+  padding-top: 50px;
+  -webkit-backdrop-filter: 30px;
+          backdrop-filter: 30px;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+.nav-box svg {
+  height: 27px;
+  width: 27px;
+}
+.nav-box .a a {
+  line-height: 40px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  text-shadow: 1px 1px #000;
+}
+.nav-box .share {
+  margin-right: 5%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-box .Socials {
+  padding: 0 10px;
+  line-height: 30px;
+  background: #a2c159;
+  display: inline-flex;
+  gap: 10px;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin: 20px 0px;
+}
+.nav-box .list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.nav-box .list svg:nth-child(1) {
+  width: 30px;
+  height: 30px;
+}
+
+.isOpen .nav-box {
+  transform: translateX(0);
+}
 
 .banner img {
   width: 100%;
   height: auto;
   margin-bottom: 5.7142857143%;
+}
+@media (max-width: 577px) {
+  .banner {
+    padding-top: 90px;
+  }
 }
 
 .cong {
@@ -172,6 +266,41 @@ header .show-phone {
   }
   100% {
     transform: translateY(50%);
+  }
+}
+@media (max-width: 577px) {
+  .about {
+    flex-direction: column;
+  }
+  .about .img {
+    width: 100%;
+  }
+  .about .img img {
+    width: 70%;
+  }
+  .about .txt {
+    width: 100%;
+  }
+  .about .txt .title {
+    text-align: center;
+  }
+  .about .txt .title img {
+    max-width: 80%;
+  }
+  .about .info {
+    flex-direction: column;
+    position: relative;
+  }
+  .about .info p {
+    width: 100% !important;
+    position: relative;
+    z-index: 3;
+  }
+  .about .info p:nth-child(2) {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    text-align: right;
   }
 }
 
@@ -249,9 +378,15 @@ header .show-phone {
   color: rgb(51, 51, 51);
   line-height: 28px;
   margin-bottom: 3.4482758621%;
+  padding-left: 20px;
+}
+.TOKENOMICS .box ul li {
+  text-indent: -14px;
+  line-height: 18px;
+  margin-bottom: 10px;
 }
 .TOKENOMICS .box ul li::before {
-  margin-right: 10px;
+  margin-right: 5px;
   content: "";
   width: 8px;
   height: 8px;
@@ -294,6 +429,52 @@ header .show-phone {
   width: 16px;
   margin-left: 20px;
 }
+@media (max-width: 577px) {
+  .TOKENOMICS h2 img {
+    max-width: 250px;
+  }
+  .TOKENOMICS .box {
+    flex-direction: column;
+    background: none;
+    max-height: none;
+    display: block;
+  }
+  .TOKENOMICS .box .img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    margin-bottom: -140px;
+  }
+  .TOKENOMICS .box .img img {
+    position: static;
+    max-width: 250px;
+    transform: translate(-5%, 0%);
+  }
+  .TOKENOMICS .box .info {
+    background: rgb(238, 255, 212);
+    border-radius: 40px;
+    padding-top: 140px;
+    position: relative;
+  }
+  .TOKENOMICS .box .info .total {
+    line-height: 30px;
+    padding: 20px 0;
+  }
+  .TOKENOMICS .box .footer {
+    height: 40px !important;
+    line-height: 40px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .TOKENOMICS .box .footer .name img {
+    width: 80px;
+  }
+  .TOKENOMICS .wo {
+    width: 40px;
+  }
+}
 
 .pro-list {
   display: flex;
@@ -312,37 +493,6 @@ header .show-phone {
   .pro-list img {
     height: 40px;
   }
-}
-
-.footer-page {
-  background: rgb(163, 194, 90) url(../image/wave.png) no-repeat 0 bottom;
-  background-size: 100% auto;
-  border-radius: 60px 60px 0 0;
-  padding-bottom: 40px;
-}
-.footer-page .ft {
-  display: flex;
-  padding-top: 6.0714285714%;
-}
-.footer-page .ft .img {
-  padding: 0 20px;
-  width: 282px;
-}
-.footer-page .ft .txt {
-  padding-left: 60px;
-  flex: 1;
-}
-.footer-page .ft h2 {
-  margin-top: -15px;
-}
-.footer-page .ft h3 {
-  padding: 20px 0;
-  font-size: 32px;
-}
-.footer-page .ft p {
-  font-size: 18px;
-  line-height: 30px;
-  margin-bottom: 20px;
 }
 
 .buy {
@@ -447,5 +597,59 @@ header .show-phone {
   .buy ul li {
     width: 45%;
     margin-left: 20px;
+  }
+}
+
+.footer-page {
+  background: rgb(163, 194, 90) url(../image/wave.png) no-repeat 0 bottom;
+  background-size: 100% auto;
+  border-radius: 60px 60px 0 0;
+  padding-bottom: 40px;
+}
+.footer-page .ft {
+  display: flex;
+  padding-top: 6.0714285714%;
+}
+.footer-page .ft .img {
+  padding: 0 20px;
+  width: 282px;
+}
+.footer-page .ft .txt {
+  padding-left: 60px;
+  flex: 1;
+}
+.footer-page .ft h2 {
+  margin-top: -15px;
+}
+.footer-page .ft h3 {
+  padding: 20px 0;
+  font-size: 32px;
+}
+.footer-page .ft p {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+@media (max-width: 577px) {
+  .footer-page .ft {
+    padding-top: 40px;
+  }
+  .footer-page .ft .img {
+    width: 100px;
+    padding: 0;
+  }
+  .footer-page .ft .txt {
+    padding-left: 10px;
+  }
+  .footer-page .ft .txt img {
+    max-width: 200px;
+  }
+  .footer-page .ft .txt h3 {
+    font-size: 22px;
+  }
+  .footer-page .ft .txt p {
+    font-size: 14px;
+    line-height: 15px;
+    margin-bottom: 10px;
   }
 }/*# sourceMappingURL=index.css.map */
