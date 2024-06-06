@@ -708,12 +708,14 @@ header {
 	.ft {
 		display: flex;
 		padding-top: 20/1400 * 100%;
-		.img {
+		.img,
+		#demoCanvas {
 			width: 330px;
+			max-height: 420px;
 		}
 		.txt {
 			padding-left: 60px;
-			padding-top: 60px;
+			padding-top: 10px;
 			flex: 1;
 			img {
 				max-width: 430px;
@@ -734,13 +736,16 @@ header {
 	}
 	@media (max-width: 820px) {
 		margin-bottom: -25px;
+		.txt {
+			padding-left: 10px;
+		}
 	}
 	@media (max-width: 577px) {
 		.ft {
-			padding-top: 0px;
-			.img {
-				width: 100px;
-				padding: 0;
+			padding-top: 40px;
+			#demoCanvas {
+				width: 120px;
+				max-height: 420px;
 			}
 			.txt {
 				padding-left: 10px;

@@ -706,12 +706,14 @@ header .show-phone {
   display: flex;
   padding-top: 1.4285714286%;
 }
-.footer-page .ft .img {
+.footer-page .ft .img,
+.footer-page .ft #demoCanvas {
   width: 330px;
+  max-height: 420px;
 }
 .footer-page .ft .txt {
   padding-left: 60px;
-  padding-top: 60px;
+  padding-top: 10px;
   flex: 1;
 }
 .footer-page .ft .txt img {
@@ -733,14 +735,17 @@ header .show-phone {
   .footer-page {
     margin-bottom: -25px;
   }
+  .footer-page .txt {
+    padding-left: 10px;
+  }
 }
 @media (max-width: 577px) {
   .footer-page .ft {
-    padding-top: 0px;
+    padding-top: 40px;
   }
-  .footer-page .ft .img {
-    width: 100px;
-    padding: 0;
+  .footer-page .ft #demoCanvas {
+    width: 120px;
+    max-height: 420px;
   }
   .footer-page .ft .txt {
     padding-left: 10px;
