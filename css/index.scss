@@ -1,5 +1,6 @@
 html {
 	scroll-behavior: smooth;
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
 svg {
 	vertical-align: middle;
@@ -9,7 +10,8 @@ img {
 }
 .isOpen {
 	> *:not(.no-filter) {
-		// filter: blur(10px);
+		filter: blur(20px);
+		animation: filter 1s linear;
 	}
 }
 .no-filter {
@@ -29,6 +31,12 @@ img {
 	max-width: 100%;
 	padding: 0 20px;
 	margin: 0 auto;
+	@media (max-width: 1440px) {
+		max-width: 1120px;
+	}
+	@media (max-width: 820px) {
+		max-width: 100%;
+	}
 }
 
 header {
@@ -45,13 +53,19 @@ header {
 		font-size: 16px;
 		ul {
 			display: flex;
-			gap: (100/1400) * 100%;
+			gap: (50/1400) * 100%;
 			line-height: 50px;
 			align-items: center;
 			justify-content: center;
 			li {
 				a {
 					color: #fff;
+					padding: 5px 7px;
+					border-radius: 22px;
+					&:hover {
+						color: #000;
+						background: #fff;
+					}
 				}
 			}
 		}
@@ -135,24 +149,35 @@ header {
 	z-index: 99;
 	height: 100vh;
 	position: fixed;
+	z-index: 999;
 	top: 0;
 	transform: translateX(-100%);
-	width: 70%;
-	background: rgba($color: #a2c159, $alpha: 0.7);
+	width: 59%;
+	background: #fff;
 	text-align: center;
 	padding-top: 50px;
 	backdrop-filter: 30px;
 	font-size: 20px;
 	transition: all 0.5s;
+	.close {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		svg {
+			* {
+				fill: #000;
+			}
+		}
+	}
 	svg {
 		height: 27px;
 		width: 27px;
 	}
 	.a a {
 		line-height: 40px;
-		color: #fff;
+		color: #000;
 		border-bottom: 1px solid #fff;
-		text-shadow: 1px 1px #000;
+		text-shadow: 1px 1px #bab4b4;
 	}
 
 	.share {
@@ -196,7 +221,7 @@ header {
 		height: auto;
 		margin-bottom: 80/1400 * 100%;
 	}
-	@media (max-width: 577px) {
+	@media (max-width: 820px) {
 		padding-top: 90px;
 	}
 }
@@ -207,7 +232,7 @@ header {
 		width: 500%;
 		.ani {
 			display: inline-flex;
-			animation: a linear 20s infinite;
+			animation: a linear 40s infinite;
 			span {
 				margin-right: 60px;
 			}
@@ -260,14 +285,14 @@ header {
 		}
 		img {
 			transform: translateY(50%);
-			animation: aa linear 3s infinite;
+			animation: aa linear 5s infinite;
 		}
 		@keyframes aa {
 			0% {
 				transform: translateY(50%);
 			}
 			50% {
-				transform: translateY(70%);
+				transform: translateY(80%);
 			}
 			100% {
 				transform: translateY(50%);
@@ -327,7 +352,7 @@ header {
 			top: 0;
 			right: 20px;
 			transform: translateY(-100%);
-			animation: wo linear 40s infinite;
+			animation: wo linear 80s infinite;
 			transform-origin: center bottom;
 			@keyframes wo {
 				0% {
@@ -349,7 +374,7 @@ header {
 		.img {
 			width: 530/1400 * 100%;
 			position: relative;
-			animation: aaa linear 7s infinite;
+			animation: aaa linear 10s infinite;
 			@keyframes aaa {
 				0% {
 					transform: translateY(0%);
@@ -492,9 +517,11 @@ header {
 	margin-bottom: 180/1400 * 100%;
 	justify-content: end;
 	padding-top: 20px;
+	padding-left: 30%;
 	gap: 20px;
 	img {
-		height: 70px;
+		height: auto;
+		max-height: 70px;
 	}
 	@media (max-width: 577px) {
 		gap: 10px;
@@ -546,7 +573,7 @@ header {
 			border-radius: 59px;
 			color: rgb(0, 0, 0);
 			font-size: 14px;
-			padding: 0 30px;
+			padding: 0 20px;
 		}
 		.step {
 			position: absolute;
@@ -558,8 +585,8 @@ header {
 			line-height: 0;
 		}
 		h2 {
-			font-size: 28px;
-			padding: 35px 0;
+			font-size: 23px;
+			padding: 35px 0 20px;
 			margin-bottom: 0;
 		}
 		p {
@@ -596,6 +623,7 @@ header {
 		}
 	}
 	@media (max-width: 577px) {
+		margin-bottom: 40px;
 		h2 {
 			flex-direction: column;
 			a {
@@ -618,20 +646,19 @@ header {
 	background-size: 100% auto;
 	border-radius: 60px 60px 0 0;
 	padding-bottom: 40px;
-	margin-bottom: -60px;
+	// margin-bottom: -60px;
 	.ft {
 		display: flex;
-		padding-top: 85/1400 * 100%;
+		padding-top: 40/1400 * 100%;
 		.img {
-			padding: 0 20px;
-			width: 282px;
+			width: 330px;
 		}
 		.txt {
 			padding-left: 60px;
 			flex: 1;
 		}
 		h2 {
-			margin-top: -15px;
+			margin-top: 40px;
 		}
 		h3 {
 			padding: 20px 0;
