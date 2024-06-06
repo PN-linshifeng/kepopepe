@@ -742,18 +742,22 @@ header {
 	}
 	@media (max-width: 577px) {
 		.ft {
+			display: block;
 			padding-top: 40px;
 			#demoCanvas {
 				width: 120px;
-				max-height: 420px;
+				height: 120px;
+				float: left;
 			}
 			.txt {
-				padding-left: 10px;
+				overflow: hidden;
+				padding-left: 0px;
 				h2 {
 					margin-top: 0;
 				}
 				img {
 					max-width: 200px;
+					width: 100%;
 				}
 				h3 {
 					font-size: 22px;

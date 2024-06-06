@@ -741,20 +741,24 @@ header .show-phone {
 }
 @media (max-width: 577px) {
   .footer-page .ft {
+    display: block;
     padding-top: 40px;
   }
   .footer-page .ft #demoCanvas {
     width: 120px;
-    max-height: 420px;
+    height: 120px;
+    float: left;
   }
   .footer-page .ft .txt {
-    padding-left: 10px;
+    overflow: hidden;
+    padding-left: 0px;
   }
   .footer-page .ft .txt h2 {
     margin-top: 0;
   }
   .footer-page .ft .txt img {
     max-width: 200px;
+    width: 100%;
   }
   .footer-page .ft .txt h3 {
     font-size: 22px;
