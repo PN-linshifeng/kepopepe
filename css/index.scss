@@ -233,6 +233,9 @@ header {
 		.ani {
 			display: inline-flex;
 			animation: a linear 40s infinite;
+			img {
+				height: (135/2) + px;
+			}
 			span {
 				margin-right: 60px;
 			}
@@ -240,7 +243,12 @@ header {
 	}
 	@media (max-width: 577px) {
 		.box {
+			margin-bottom: 40px;
 			.ani {
+				animation: a linear 30s infinite;
+				img {
+					height: auto;
+				}
 				span {
 					margin-right: 30px;
 				}
@@ -265,7 +273,7 @@ header {
 		width: 600/1400 * 100%;
 		text-align: center;
 		img {
-			max-width: 100%;
+			max-width: 374px;
 		}
 	}
 	.txt {
@@ -274,7 +282,7 @@ header {
 	.title {
 		margin-bottom: 15px;
 		img {
-			max-width: 100%;
+			max-width: 637px;
 		}
 	}
 	.info {
@@ -286,6 +294,7 @@ header {
 		img {
 			transform: translateY(50%);
 			animation: aa linear 5s infinite;
+			max-width: 110px;
 		}
 		@keyframes aa {
 			0% {
@@ -301,7 +310,7 @@ header {
 	}
 	@media (max-width: 577px) {
 		flex-direction: column;
-
+		// margin-bottom: 150px;
 		.img {
 			width: 100%;
 			img {
@@ -331,6 +340,9 @@ header {
 				bottom: 0;
 				text-align: right;
 			}
+			img {
+				width: 55px;
+			}
 		}
 	}
 }
@@ -340,6 +352,9 @@ header {
 		z-index: 2;
 		text-align: center;
 		margin-bottom: 50px;
+		img {
+			max-width: 325px;
+		}
 	}
 	.box {
 		display: flex;
@@ -354,6 +369,7 @@ header {
 			transform: translateY(-100%);
 			animation: wo linear 80s infinite;
 			transform-origin: center bottom;
+			max-width: 79px;
 			@keyframes wo {
 				0% {
 					transform: translate(0%, -100%);
@@ -440,6 +456,7 @@ header {
 				color: #000;
 				img {
 					vertical-align: middle;
+					max-width: (337/2) + px;
 				}
 			}
 			.line {
@@ -464,6 +481,7 @@ header {
 	}
 	@media (max-width: 577px) {
 		h2 {
+			margin: 25px 0;
 			img {
 				max-width: 250px;
 			}
@@ -587,6 +605,9 @@ header {
 			top: 0;
 			left: 50%;
 			transform: translate(-50%, -50%);
+			img {
+				max-width: 99px;
+			}
 		}
 		.img {
 			line-height: 0;
@@ -644,6 +665,9 @@ header {
 			li {
 				width: 45%;
 				margin-left: 20px;
+				img {
+					max-width: 70%;
+				}
 			}
 		}
 	}
@@ -663,6 +687,9 @@ header {
 		.txt {
 			padding-left: 60px;
 			flex: 1;
+			img {
+				max-width: 430px;
+			}
 		}
 		h2 {
 			margin-top: 40px;

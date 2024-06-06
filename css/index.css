@@ -238,10 +238,22 @@ header .show-phone {
   display: inline-flex;
   animation: a linear 40s infinite;
 }
+.cong .box .ani img {
+  height: 67.5px;
+}
 .cong .box .ani span {
   margin-right: 60px;
 }
 @media (max-width: 577px) {
+  .cong .box {
+    margin-bottom: 40px;
+  }
+  .cong .box .ani {
+    animation: a linear 30s infinite;
+  }
+  .cong .box .ani img {
+    height: auto;
+  }
   .cong .box .ani span {
     margin-right: 30px;
   }
@@ -266,7 +278,7 @@ header .show-phone {
   text-align: center;
 }
 .about .img img {
-  max-width: 100%;
+  max-width: 374px;
 }
 .about .txt {
   width: 48.5714285714%;
@@ -275,7 +287,7 @@ header .show-phone {
   margin-bottom: 15px;
 }
 .about .title img {
-  max-width: 100%;
+  max-width: 637px;
 }
 .about .info {
   display: flex;
@@ -287,6 +299,7 @@ header .show-phone {
 .about .info img {
   transform: translateY(50%);
   animation: aa linear 5s infinite;
+  max-width: 110px;
 }
 @keyframes aa {
   0% {
@@ -333,6 +346,9 @@ header .show-phone {
     bottom: 0;
     text-align: right;
   }
+  .about .info img {
+    width: 55px;
+  }
 }
 
 .TOKENOMICS h2 {
@@ -340,6 +356,9 @@ header .show-phone {
   z-index: 2;
   text-align: center;
   margin-bottom: 50px;
+}
+.TOKENOMICS h2 img {
+  max-width: 325px;
 }
 .TOKENOMICS .box {
   display: flex;
@@ -355,6 +374,7 @@ header .show-phone {
   transform: translateY(-100%);
   animation: wo linear 80s infinite;
   transform-origin: center bottom;
+  max-width: 79px;
 }
 @keyframes wo {
   0% {
@@ -441,6 +461,7 @@ header .show-phone {
 }
 .TOKENOMICS .box .footer .name img {
   vertical-align: middle;
+  max-width: 168.5px;
 }
 .TOKENOMICS .box .footer .line {
   flex: 1;
@@ -461,6 +482,9 @@ header .show-phone {
   margin-left: 20px;
 }
 @media (max-width: 577px) {
+  .TOKENOMICS h2 {
+    margin: 25px 0;
+  }
   .TOKENOMICS h2 img {
     max-width: 250px;
   }
@@ -582,6 +606,9 @@ header .show-phone {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.buy ul .step img {
+  max-width: 99px;
+}
 .buy ul .img {
   line-height: 0;
 }
@@ -640,6 +667,9 @@ header .show-phone {
     width: 45%;
     margin-left: 20px;
   }
+  .buy ul li img {
+    max-width: 70%;
+  }
 }
 
 .footer-page {
@@ -658,6 +688,9 @@ header .show-phone {
 .footer-page .ft .txt {
   padding-left: 60px;
   flex: 1;
+}
+.footer-page .ft .txt img {
+  max-width: 430px;
 }
 .footer-page .ft h2 {
   margin-top: 40px;
