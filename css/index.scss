@@ -245,7 +245,7 @@ header {
 		.box {
 			margin-bottom: 40px;
 			.ani {
-				animation: a linear 30s infinite;
+				// animation: a linear 30s infinite;
 				img {
 					height: auto;
 				}
@@ -273,7 +273,7 @@ header {
 		width: 600/1400 * 100%;
 		text-align: center;
 		img {
-			max-width: 374px;
+			max-width: 100%;
 		}
 	}
 	.txt {
@@ -283,8 +283,10 @@ header {
 		margin-bottom: 15px;
 		img {
 			max-width: 637px;
+			width: 100%;
 		}
 	}
+
 	.info {
 		display: flex;
 		align-items: flex-end;
@@ -293,7 +295,7 @@ header {
 		}
 		img {
 			transform: translateY(50%);
-			animation: aa linear 5s infinite;
+			// animation: aa linear 5s infinite;
 			max-width: 110px;
 		}
 		@keyframes aa {
@@ -365,9 +367,9 @@ header {
 		.wo {
 			position: absolute;
 			top: 0;
-			right: 20px;
+			right: 25%;
 			transform: translateY(-100%);
-			animation: wo linear 80s infinite;
+			// animation: wo linear 80s infinite;
 			transform-origin: center bottom;
 			max-width: 79px;
 			@keyframes wo {
@@ -390,23 +392,35 @@ header {
 		.img {
 			width: 530/1400 * 100%;
 			position: relative;
-			animation: aaa linear 10s infinite;
+
+			padding: 0px 20px;
+			.an {
+				animation: aaa linear 10s infinite;
+			}
 			@keyframes aaa {
 				0% {
-					transform: translateY(0%);
+					transform: translate(-50%, -50%);
 				}
 				50% {
-					transform: translateY(7%);
+					transform: translate(-50%, -43%);
 				}
 				100% {
-					transform: translateY(0%);
+					transform: translate(-50%, -50%);
 				}
 			}
+
 			img {
 				position: absolute;
-				max-width: 100%;
+				max-width: 958/2 + px;
+				width: calc(100% - 40px);
 				top: 50%;
-				transform: translate(-40px, -50%);
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			.xing {
+				max-width: 100px;
+				left: 20px;
+				top: -70px;
 			}
 		}
 		.info {
@@ -480,8 +494,9 @@ header {
 		}
 	}
 	@media (max-width: 577px) {
+		margin-top: 50px;
 		h2 {
-			margin: 25px 0;
+			margin: 20px 0;
 			img {
 				max-width: 250px;
 			}
@@ -497,10 +512,25 @@ header {
 				width: 100%;
 				text-align: center;
 				margin-bottom: -140px;
-				img {
+				.xing {
+					width: 55px;
+				}
+				.an {
 					position: static;
 					max-width: 250px;
 					transform: translate(-5%, 0%);
+					animation: aaa linear 10s infinite;
+				}
+				@keyframes aaa {
+					0% {
+						transform: translate(0%, 0%);
+					}
+					50% {
+						transform: translate(0%, 7%);
+					}
+					100% {
+						transform: translate(0%, 0%);
+					}
 				}
 			}
 			.info {
@@ -578,10 +608,6 @@ header {
 			position: relative;
 			z-index: 2;
 			margin-bottom: -3px;
-
-			max-width: 90px;
-		}
-		.img-2 {
 		}
 	}
 	ul {
@@ -644,7 +670,8 @@ header {
 			margin: 0 -20px;
 		}
 		ul {
-			width: 200%;
+			width: 190%;
+			padding: 0 20px;
 			li {
 				width: 49%;
 			}
@@ -680,12 +707,13 @@ header {
 	// margin-bottom: -60px;
 	.ft {
 		display: flex;
-		padding-top: 40/1400 * 100%;
+		padding-top: 20/1400 * 100%;
 		.img {
 			width: 330px;
 		}
 		.txt {
 			padding-left: 60px;
+			padding-top: 60px;
 			flex: 1;
 			img {
 				max-width: 430px;
@@ -709,13 +737,16 @@ header {
 	}
 	@media (max-width: 577px) {
 		.ft {
-			padding-top: 40px;
+			padding-top: 0px;
 			.img {
 				width: 100px;
 				padding: 0;
 			}
 			.txt {
 				padding-left: 10px;
+				h2 {
+					margin-top: 0;
+				}
 				img {
 					max-width: 200px;
 				}

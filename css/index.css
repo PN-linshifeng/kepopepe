@@ -248,9 +248,6 @@ header .show-phone {
   .cong .box {
     margin-bottom: 40px;
   }
-  .cong .box .ani {
-    animation: a linear 30s infinite;
-  }
   .cong .box .ani img {
     height: auto;
   }
@@ -278,7 +275,7 @@ header .show-phone {
   text-align: center;
 }
 .about .img img {
-  max-width: 374px;
+  max-width: 100%;
 }
 .about .txt {
   width: 48.5714285714%;
@@ -288,6 +285,7 @@ header .show-phone {
 }
 .about .title img {
   max-width: 637px;
+  width: 100%;
 }
 .about .info {
   display: flex;
@@ -298,7 +296,6 @@ header .show-phone {
 }
 .about .info img {
   transform: translateY(50%);
-  animation: aa linear 5s infinite;
   max-width: 110px;
 }
 @keyframes aa {
@@ -370,9 +367,8 @@ header .show-phone {
 .TOKENOMICS .box .wo {
   position: absolute;
   top: 0;
-  right: 20px;
+  right: 25%;
   transform: translateY(-100%);
-  animation: wo linear 80s infinite;
   transform-origin: center bottom;
   max-width: 79px;
 }
@@ -393,24 +389,34 @@ header .show-phone {
 .TOKENOMICS .box .img {
   width: 37.8571428571%;
   position: relative;
+  padding: 0px 20px;
+}
+.TOKENOMICS .box .img .an {
   animation: aaa linear 10s infinite;
 }
 @keyframes aaa {
   0% {
-    transform: translateY(0%);
+    transform: translate(-50%, -50%);
   }
   50% {
-    transform: translateY(7%);
+    transform: translate(-50%, -43%);
   }
   100% {
-    transform: translateY(0%);
+    transform: translate(-50%, -50%);
   }
 }
 .TOKENOMICS .box .img img {
   position: absolute;
-  max-width: 100%;
+  max-width: 479px;
+  width: calc(100% - 40px);
   top: 50%;
-  transform: translate(-40px, -50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.TOKENOMICS .box .img .xing {
+  max-width: 100px;
+  left: 20px;
+  top: -70px;
 }
 .TOKENOMICS .box .info {
   flex: 1;
@@ -482,8 +488,11 @@ header .show-phone {
   margin-left: 20px;
 }
 @media (max-width: 577px) {
+  .TOKENOMICS {
+    margin-top: 50px;
+  }
   .TOKENOMICS h2 {
-    margin: 25px 0;
+    margin: 20px 0;
   }
   .TOKENOMICS h2 img {
     max-width: 250px;
@@ -501,10 +510,25 @@ header .show-phone {
     text-align: center;
     margin-bottom: -140px;
   }
-  .TOKENOMICS .box .img img {
+  .TOKENOMICS .box .img .xing {
+    width: 55px;
+  }
+  .TOKENOMICS .box .img .an {
     position: static;
     max-width: 250px;
     transform: translate(-5%, 0%);
+    animation: aaa linear 10s infinite;
+  }
+  @keyframes aaa {
+    0% {
+      transform: translate(0%, 0%);
+    }
+    50% {
+      transform: translate(0%, 7%);
+    }
+    100% {
+      transform: translate(0%, 0%);
+    }
   }
   .TOKENOMICS .box .info {
     background: rgb(238, 255, 212);
@@ -582,7 +606,6 @@ header .show-phone {
   position: relative;
   z-index: 2;
   margin-bottom: -3px;
-  max-width: 90px;
 }
 .buy ul {
   display: flex;
@@ -643,7 +666,8 @@ header .show-phone {
     margin: 0 -20px;
   }
   .buy ul {
-    width: 200%;
+    width: 190%;
+    padding: 0 20px;
   }
   .buy ul li {
     width: 49%;
@@ -680,13 +704,14 @@ header .show-phone {
 }
 .footer-page .ft {
   display: flex;
-  padding-top: 2.8571428571%;
+  padding-top: 1.4285714286%;
 }
 .footer-page .ft .img {
   width: 330px;
 }
 .footer-page .ft .txt {
   padding-left: 60px;
+  padding-top: 60px;
   flex: 1;
 }
 .footer-page .ft .txt img {
@@ -711,7 +736,7 @@ header .show-phone {
 }
 @media (max-width: 577px) {
   .footer-page .ft {
-    padding-top: 40px;
+    padding-top: 0px;
   }
   .footer-page .ft .img {
     width: 100px;
@@ -719,6 +744,9 @@ header .show-phone {
   }
   .footer-page .ft .txt {
     padding-left: 10px;
+  }
+  .footer-page .ft .txt h2 {
+    margin-top: 0;
   }
   .footer-page .ft .txt img {
     max-width: 200px;
