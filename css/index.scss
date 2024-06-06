@@ -525,8 +525,15 @@ header {
 	}
 	@media (max-width: 577px) {
 		gap: 10px;
+		padding-left: 0px;
+		display: block;
+		text-align: center;
+		li {
+			// width: 33.33%;
+			display: inline-block;
+		}
 		img {
-			height: 40px;
+			height: 50px;
 		}
 	}
 }
