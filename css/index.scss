@@ -293,12 +293,18 @@ header {
 		line-height: 23.8px;
 		font-size: 17px;
 		font-weight: 400;
-		p:nth-child(1) {
-			width: 85%;
+		.xing {
+			width: 50px;
 		}
-		img {
-			transform: translateY(50%);
-			// animation: aa linear 5s infinite;
+		P {
+			margin-bottom: 32px;
+		}
+		div:nth-child(1) {
+			flex: 1;
+			// width: 90%;
+		}
+		.xing img {
+			transform: translate(15px, 50%);
 			max-width: 110px;
 		}
 		@keyframes aa {
@@ -327,7 +333,7 @@ header {
 			.title {
 				text-align: center;
 				img {
-					max-width: 80%;
+					// max-width: 80%;
 				}
 			}
 		}
@@ -339,14 +345,10 @@ header {
 				position: relative;
 				z-index: 3;
 			}
-			p:nth-child(2) {
-				position: absolute;
-				z-index: 2;
-				bottom: 0;
-				text-align: right;
-			}
-			img {
+
+			.xing img {
 				width: 55px;
+				transform: translate(15px, -45px);
 			}
 		}
 	}

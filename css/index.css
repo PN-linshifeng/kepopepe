@@ -292,11 +292,17 @@ header .show-phone {
   font-size: 17px;
   font-weight: 400;
 }
-.about .info p:nth-child(1) {
-  width: 85%;
+.about .info .xing {
+  width: 50px;
 }
-.about .info img {
-  transform: translateY(50%);
+.about .info P {
+  margin-bottom: 32px;
+}
+.about .info div:nth-child(1) {
+  flex: 1;
+}
+.about .info .xing img {
+  transform: translate(15px, 50%);
   max-width: 110px;
 }
 @keyframes aa {
@@ -326,9 +332,6 @@ header .show-phone {
   .about .txt .title {
     text-align: center;
   }
-  .about .txt .title img {
-    max-width: 80%;
-  }
   .about .info {
     flex-direction: column;
     position: relative;
@@ -338,14 +341,9 @@ header .show-phone {
     position: relative;
     z-index: 3;
   }
-  .about .info p:nth-child(2) {
-    position: absolute;
-    z-index: 2;
-    bottom: 0;
-    text-align: right;
-  }
-  .about .info img {
+  .about .info .xing img {
     width: 55px;
+    transform: translate(15px, -45px);
   }
 }
 
