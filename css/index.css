@@ -251,6 +251,8 @@ header .show-phone {
   }
   .cong .box .ani img {
     height: auto;
+    width: auto;
+    max-height: 30px;
   }
   .cong .box .ani span {
     margin-right: 30px;
