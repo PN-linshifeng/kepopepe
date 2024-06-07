@@ -752,7 +752,7 @@ header {
 	border-radius: 60px 60px 0 0;
 	padding-bottom: 40px;
 	overflow: hidden;
-	margin-bottom: -40px;
+	margin-bottom: -20px;
 	.ft {
 		display: flex;
 		padding-top: 20/1400 * 100%;
@@ -783,7 +783,7 @@ header {
 		}
 	}
 	@media (max-width: 820px) {
-		margin-bottom: -25px;
+		// margin-bottom: -25px;
 		.txt {
 			padding-left: 10px;
 		}
