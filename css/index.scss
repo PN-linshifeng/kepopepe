@@ -31,7 +31,7 @@ img {
 	padding: 0 20px;
 	margin: 0 auto;
 	@media (max-width: 1440px) {
-		max-width: 1120px;
+		max-width: 1220px;
 	}
 	@media (max-width: 820px) {
 		max-width: 100%;
@@ -648,7 +648,7 @@ header {
 			border-radius: 59px;
 			color: rgb(0, 0, 0);
 			font-size: 14px;
-			padding: 0 20px;
+			padding: 0 22px;
 			&:nth-child(1) {
 				.img {
 					img {
@@ -675,11 +675,14 @@ header {
 			line-height: 30.8px;
 			padding: 35px 0 20px;
 			margin-bottom: 0;
+			width: 200px;
+			margin: 0 auto;
 			-webkit-font-smoothing: antialiased;
 		}
 		p {
 			flex-grow: 1;
 			padding-bottom: 20px;
+
 			font-size: 15px;
 			font-weight: 400;
 			line-height: 17.89px;
@@ -694,6 +697,10 @@ header {
 		}
 		li:nth-child(2) {
 			background: rgb(98, 163, 76);
+			img {
+				max-width: 100%;
+				transform: translateY(3px);
+			}
 		}
 		li:nth-child(3) {
 			background: rgb(237, 255, 212);

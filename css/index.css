@@ -37,7 +37,7 @@ img {
 }
 @media (max-width: 1440px) {
   .container {
-    max-width: 1120px;
+    max-width: 1220px;
   }
 }
 @media (max-width: 820px) {
@@ -636,7 +636,7 @@ header .show-phone {
   border-radius: 59px;
   color: rgb(0, 0, 0);
   font-size: 14px;
-  padding: 0 20px;
+  padding: 0 22px;
 }
 .buy ul li:nth-child(1) .img img {
   transform: translateX(2%);
@@ -659,6 +659,8 @@ header .show-phone {
   line-height: 30.8px;
   padding: 35px 0 20px;
   margin-bottom: 0;
+  width: 200px;
+  margin: 0 auto;
   -webkit-font-smoothing: antialiased;
 }
 .buy ul p {
@@ -678,6 +680,10 @@ header .show-phone {
 }
 .buy ul li:nth-child(2) {
   background: rgb(98, 163, 76);
+}
+.buy ul li:nth-child(2) img {
+  max-width: 100%;
+  transform: translateY(3px);
 }
 .buy ul li:nth-child(3) {
   background: rgb(237, 255, 212);
