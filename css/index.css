@@ -146,6 +146,9 @@ header .show-phone {
   header .logo {
     width: 140px;
   }
+  header .lan .cre {
+    font-size: 13px;
+  }
 }
 
 .nav-box {
@@ -319,6 +322,7 @@ header .show-phone {
 @media (max-width: 577px) {
   .about {
     flex-direction: column;
+    margin-bottom: -20px;
   }
   .about .img {
     width: 100%;
@@ -445,7 +449,6 @@ header .show-phone {
   color-scheme: light;
   -webkit-font-smoothing: antialiased;
   font-size: 17px;
-  height: 28.625px;
   line-height: 28.63px;
 }
 .TOKENOMICS .box ul li::before {
@@ -508,6 +511,9 @@ header .show-phone {
     background: none;
     max-height: none;
     display: block;
+  }
+  .TOKENOMICS .box li {
+    margin-bottom: 8px;
   }
   .TOKENOMICS .box .img {
     position: relative;

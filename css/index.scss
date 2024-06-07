@@ -142,6 +142,11 @@ header {
 		.logo {
 			width: 140px;
 		}
+		.lan {
+			.cre {
+				font-size: 13px;
+			}
+		}
 	}
 }
 
@@ -321,7 +326,7 @@ header {
 	}
 	@media (max-width: 577px) {
 		flex-direction: column;
-		// margin-bottom: 150px;
+		margin-bottom: -20px;
 		.img {
 			width: 100%;
 			img {
@@ -456,7 +461,7 @@ header {
 				-webkit-font-smoothing: antialiased;
 				// margin-bottom: 10px;
 				font-size: 17px;
-				height: 28.625px;
+				// height: 28.625px;
 				line-height: 28.63px;
 				&::before {
 					margin-right: 5px;
@@ -519,6 +524,9 @@ header {
 			background: none;
 			max-height: none;
 			display: block;
+			li {
+				margin-bottom: 8px;
+			}
 			.img {
 				position: relative;
 				z-index: 2;
