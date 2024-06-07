@@ -728,7 +728,7 @@ header .show-phone {
 }
 
 .footer-page {
-  background: rgb(163, 194, 90) url(../image/img/wa.svg) no-repeat 0 bottom;
+  background: rgb(163, 194, 90) url(../image/img/wave3.svg) no-repeat 0 bottom;
   background-size: 100% auto;
   border-radius: 60px 60px 0 0;
   padding-bottom: 40px;
@@ -753,7 +753,7 @@ header .show-phone {
   max-width: 430px;
 }
 .footer-page .ft h2 {
-  margin-top: 40px;
+  margin-top: 110px;
 }
 .footer-page .ft h3 {
   padding: 20px 0;
