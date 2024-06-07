@@ -702,6 +702,7 @@ header .show-phone {
   background-size: 100% auto;
   border-radius: 60px 60px 0 0;
   padding-bottom: 40px;
+  overflow:hidden;
 }
 .footer-page .ft {
   display: flex;
