@@ -27,7 +27,6 @@ img {
   background-size: 100% auto;
   color: #fff;
   font-size: 16px;
-  font-family: "Margarine";
 }
 
 .container {
@@ -703,7 +702,6 @@ header .show-phone {
   background-size: 100% auto;
   border-radius: 60px 60px 0 0;
   padding-bottom: 40px;
-  overflow: hidden;
 }
 .footer-page .ft {
   display: flex;
