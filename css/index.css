@@ -273,12 +273,13 @@ header .show-phone {
   align-items: center;
   margin-bottom: 100px;
 }
-.about .img {
+.about #aboutImg {
   width: 42.8571428571%;
-  text-align: center;
+  text-align: center !important;
 }
-.about .img img {
-  max-width: 100%;
+.about #aboutImg canvas {
+  max-width: 75%;
+  transform: initial !important;
 }
 .about .txt {
   width: 48.5714285714%;
@@ -323,14 +324,13 @@ header .show-phone {
 }
 @media (max-width: 577px) {
   .about {
+    display: block;
     flex-direction: column;
     margin-bottom: -20px;
   }
-  .about .img {
+  .about #aboutImg {
     width: 100%;
-  }
-  .about .img img {
-    width: 70%;
+    min-height: 284px;
   }
   .about .txt {
     width: 100%;

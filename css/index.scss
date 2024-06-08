@@ -276,11 +276,13 @@ header {
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 100px;
-	.img {
+	#aboutImg {
 		width: 600/1400 * 100%;
-		text-align: center;
-		img {
-			max-width: 100%;
+		text-align: center !important;
+
+		canvas {
+			max-width: 75%;
+			transform: initial !important;
 		}
 	}
 	.txt {
@@ -327,12 +329,14 @@ header {
 		}
 	}
 	@media (max-width: 577px) {
+		display: block;
 		flex-direction: column;
 		margin-bottom: -20px;
-		.img {
+		#aboutImg {
 			width: 100%;
-			img {
-				width: 70%;
+			min-height: 284px;
+			canvas {
+				// width: ;
 			}
 		}
 		.txt {
