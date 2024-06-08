@@ -10,7 +10,7 @@
   <title>kepopepe</title>
   <link rel="stylesheet" href="css/html5.css" />
   <link rel="stylesheet" href="css/animate.min.css" />
-  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/index.css?d" />
 </head>
 
 <body class="bg" id="home">
@@ -322,9 +322,7 @@
   </div>
   <div class="container" id="about">
     <div class="about">
-      <div class="img">
-        <img src="./image/img/team.svg" alt="team_" srcset="" class="">
-      </div>
+      <div id="aboutImg"></div>
       <div class="txt">
         <div class="info">
           <div>
@@ -615,5 +613,12 @@
   parser.load('./image/eats2x.svga', function (videoItem) {
     player.setVideoItem(videoItem);
     player.startAnimation();
+  })
+
+  var about = new SVGA.Player('#aboutImg');
+  var about2 = new SVGA.Parser('#aboutImg'); // 如果你需要支持 IE6+，那么必须把同样的选择器传给 Parser。
+  about2.load('./image/about.svga', function (videoItem) {
+    about.setVideoItem(videoItem);
+    about.startAnimation();
   })
 </script>
