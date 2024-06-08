@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/html5.css" />
   <link rel="stylesheet" href="css/animate.min.css" />
   <link rel="stylesheet" href="css/index.css?d" />
+  <script src="js/svga.js"></script>
 </head>
 
 <body class="bg" id="home">
@@ -323,6 +324,14 @@
   <div class="container" id="about">
     <div class="about">
       <div id="aboutImg"></div>
+      <script>
+        var about = new SVGA.Player('#aboutImg');
+        var about2 = new SVGA.Parser('#aboutImg'); // 如果你需要支持 IE6+，那么必须把同样的选择器传给 Parser。
+        about2.load('./image/about.svga', function (videoItem) {
+          about.setVideoItem(videoItem);
+          about.startAnimation();
+        })
+      </script>
       <div class="txt">
         <div class="info">
           <div>
@@ -591,7 +600,6 @@
 </body>
 
 </html>
-<script src="js/svga.js"></script>
 <script>
   var close = document.querySelector('.close')
   var open = document.querySelector('.open')
@@ -615,10 +623,5 @@
     player.startAnimation();
   })
 
-  var about = new SVGA.Player('#aboutImg');
-  var about2 = new SVGA.Parser('#aboutImg'); // 如果你需要支持 IE6+，那么必须把同样的选择器传给 Parser。
-  about2.load('./image/about.svga', function (videoItem) {
-    about.setVideoItem(videoItem);
-    about.startAnimation();
-  })
+
 </script>
