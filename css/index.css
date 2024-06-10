@@ -725,6 +725,7 @@ header .show-phone {
   .buy .list {
     padding-top: 20px;
     overflow-x: auto;
+    overflow-y: hidden;
     margin: 0 -20px;
   }
   .buy ul {
@@ -738,6 +739,12 @@ header .show-phone {
 @media (max-width: 577px) {
   .buy {
     margin-bottom: 40px;
+  }
+  .buy .list {
+    padding-top: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 0 -20px;
   }
   .buy h2 {
     flex-direction: column;
