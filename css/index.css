@@ -2,6 +2,9 @@ html {
   scroll-behavior: smooth;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
+html.jp {
+  font-family: "Noto Sans JP", sans-serif;
+}
 
 svg {
   vertical-align: middle;
@@ -77,6 +80,7 @@ header .nav ul li a:hover {
   background: #fff;
 }
 header .lan .cre {
+  width: 92px;
   display: inline-block;
   height: 30px;
   padding: 0 10px;
@@ -609,6 +613,10 @@ header .show-phone {
 .buy h2 .title {
   width: 81%;
 }
+.buy h2 span.title {
+  width: auto;
+  font-size: 95px;
+}
 .buy h2 a {
   line-height: 0;
   text-align: center;
@@ -649,6 +657,16 @@ header .show-phone {
 .buy ul .step img {
   max-width: 99px;
 }
+.buy ul .step span {
+  display: inline-block;
+  line-height: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  font-size: 19px;
+  border-radius: 20px;
+  background: #fff;
+  padding: 0 10px;
+}
 .buy ul .img {
   line-height: 0;
 }
@@ -661,6 +679,9 @@ header .show-phone {
   width: 200px;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
+}
+.buy ul h2.japan {
+  width: auto;
 }
 .buy ul p {
   flex-grow: 1;
@@ -753,6 +774,7 @@ header .show-phone {
 }
 .footer-page .ft h2 {
   margin-top: 80px;
+  font-size: 64px;
 }
 .footer-page .ft h3 {
   padding: 20px 0;
@@ -885,25 +907,4 @@ header .show-phone {
 }
 .copyright .copyright-box {
   background-color: #f3d45b;
-}
-
-.sp {
-  width: 375px;
-  height: 425px;
-}
-.sp div {
-  width: 1500%;
-  height: 100%;
-  background-image: url(../image/about/1.png), url(../image/about/2.png);
-  background-size: auto 100%;
-  animation: ad steps(15) 2s infinite;
-  background-repeat: no-repeat;
-}
-@keyframes ad {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 0 -1500%;
-  }
 }/*# sourceMappingURL=index.css.map */
