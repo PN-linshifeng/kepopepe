@@ -711,6 +711,16 @@ header .show-phone {
 .buy ul li:nth-child(4) {
   background: rgb(242, 212, 91);
 }
+.buy div.japan li {
+  padding: 0 15px !important;
+}
+.buy div.japan h2 {
+  font-size: 26px !important;
+  width: auto !important;
+}
+.buy div.japan p {
+  font-size: 13px !important;
+}
 @media (max-width: 820px) {
   .buy .list {
     padding-top: 20px;

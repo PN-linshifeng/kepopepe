@@ -735,6 +735,18 @@ header {
 			background: rgb(242, 212, 91);
 		}
 	}
+	div.japan {
+		li {
+			padding: 0 15px !important;
+		}
+		h2 {
+			font-size: 26px !important;
+			width: auto !important;
+		}
+		p {
+			font-size: 13px !important;
+		}
+	}
 	@media (max-width: 820px) {
 		.list {
 			padding-top: 20px;
