@@ -40,3 +40,14 @@ cre.addEventListener(
 	},
 	false
 );
+
+function copy() {
+	var textarea = document.createElement('textarea');
+	textarea.style.position = 'fixed';
+	textarea.style.opacity = 0;
+	textarea.value = '4b1F5Q8NrE2VJ8QPiKzGjDz4Fa7yx5x2Xa7Gp7jSLg9J';
+	document.body.appendChild(textarea);
+	textarea.select();
+	document.execCommand('copy');
+	document.body.removeChild(textarea);
+}

@@ -498,6 +498,7 @@ header .show-phone {
 }
 .TOKENOMICS .box .footer {
   display: flex;
+  align-items: center;
   height: 59px;
   line-height: 57px;
   border: 1px solid #000;
@@ -505,7 +506,7 @@ header .show-phone {
   padding: 0 20px;
 }
 .TOKENOMICS .box .footer .name {
-  padding: 0 40px 0 0px;
+  padding: 0 20px 0 0px;
   font-size: 20px;
   color: #000;
 }
@@ -516,20 +517,22 @@ header .show-phone {
 .TOKENOMICS .box .footer .line {
   flex: 1;
   position: relative;
-}
-.TOKENOMICS .box .footer .line::before {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  display: block;
-  width: 100%;
-  height: 1px;
-  background: #000;
-  content: "";
+  color: #000;
 }
 .TOKENOMICS .box .footer .icon {
-  width: 16px;
+  flex: 1;
   margin-left: 20px;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  line-height: 16px;
+  color: #000;
+}
+.TOKENOMICS .box .footer .icon img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 @media (max-width: 577px) {
   .TOKENOMICS {
@@ -588,14 +591,17 @@ header .show-phone {
     padding: 20px 0;
   }
   .TOKENOMICS .box .footer {
-    height: 40px !important;
+    height: auto !important;
     line-height: 40px;
-    padding-right: 20px;
+    padding: 0 20px 10px;
+    flex-direction: column;
+    text-align: center;
+    line-height: 45px;
     margin-bottom: 20px;
     margin-top: 10px;
   }
   .TOKENOMICS .box .footer .name img {
-    width: 80px;
+    width: 120px;
   }
   .TOKENOMICS .wo {
     width: 40px;
@@ -720,6 +726,10 @@ header .show-phone {
   line-height: 17.89px;
   color-scheme: light;
   -webkit-font-smoothing: antialiased;
+}
+.buy ul p span {
+  overflow-wrap: break-word;
+  word-break: break-all;
 }
 .buy ul img {
   max-width: 90%;
@@ -923,6 +933,8 @@ header .show-phone {
   justify-content: space-between;
   align-items: center;
   color: #000;
+  overflow-wrap: break-word;
+  word-break: break-all;
 }
 .copyright .ft .Contract .line {
   flex: 1;
@@ -930,8 +942,10 @@ header .show-phone {
   background-color: #000;
   margin: 0 10px;
 }
-.copyright .ft .Contract .icon {
-  width: 17px;
+.copyright .ft .Contract img {
+  margin-left: 5px;
+  width: 16px;
+  cursor: pointer;
 }
 .copyright .com {
   margin-top: 20px;
