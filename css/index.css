@@ -79,7 +79,12 @@ header .nav ul li a:hover {
   color: #000;
   background: #fff;
 }
+header .lan {
+  position: relative;
+}
 header .lan .cre {
+  position: relative;
+  z-index: 1;
   width: 92px;
   display: inline-block;
   height: 30px;
@@ -95,6 +100,26 @@ header .lan .cre svg {
 header .lan .cre i {
   font-style: normal;
   color: #000;
+}
+header .lan .locale {
+  position: absolute;
+  left: 0px;
+  right: 0;
+  top: 15px;
+  padding: 30px 0 15px;
+  background: #fff;
+  border-radius: 0 0 15px 15px;
+  color: #000;
+  text-align: center;
+  transition: all 0.2s linear;
+  transform-origin: top center;
+  transform: scaleY(0);
+}
+header .lan .locale a {
+  color: inherit;
+}
+header .lan .locale.open {
+  transform: scaleY(1);
 }
 header .share {
   margin-right: 5%;

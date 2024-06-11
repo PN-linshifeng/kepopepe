@@ -76,7 +76,10 @@ header {
 		}
 	}
 	.lan {
+		position: relative;
 		.cre {
+			position: relative;
+			z-index: 1;
 			width: 92px;
 			display: inline-block;
 			height: 30px;
@@ -91,6 +94,26 @@ header {
 			i {
 				font-style: normal;
 				color: #000;
+			}
+		}
+		.locale {
+			position: absolute;
+			left: 0px;
+			right: 0;
+			top: 15px;
+			padding: 30px 0 15px;
+			background: #fff;
+			border-radius: 0 0 15px 15px;
+			color: #000;
+			text-align: center;
+			transition: all 0.2s linear;
+			transform-origin: top center;
+			transform: scaleY(0);
+			a {
+				color: inherit;
+			}
+			&.open {
+				transform: scaleY(1);
 			}
 		}
 	}

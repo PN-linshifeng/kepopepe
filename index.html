@@ -17,7 +17,7 @@
 <body class="bg" id="home">
   <header class="container">
     <div class="logo">
-      <a href="http://"><img src="./image/img/logo.svg" alt="kepopepe logo" srcset=""></a>
+      <a href="#home"><img src="./image/img/logo.svg" alt="kepopepe logo" srcset=""></a>
     </div>
     <nav class="nav">
       <ul>
@@ -160,7 +160,7 @@
       </ul>
     </div>
     <div class="lan">
-      <div class="cre">
+      <div class="cre" id="topLocale">
         <span><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M9.5 17.0695C5.33223 17.0695 1.94141 13.6788 1.94141 9.51086C1.94141 5.34309 5.33223 1.95227 9.5 1.95227C13.6679 1.95227 17.0586 5.34309 17.0586 9.51086C17.0586 13.6788 13.6679 17.0695 9.5 17.0695ZM9.5 3.00696C5.91371 3.00696 2.99609 5.92458 2.99609 9.51086C2.99609 13.0972 5.91371 16.0148 9.5 16.0148C13.0863 16.0148 16.0039 13.0972 16.0039 9.51086C16.0039 5.92458 13.0863 3.00696 9.5 3.00696Z"
                   fill="#002C02" />
@@ -175,6 +175,9 @@
           </svg>
           <i>English</i>
         </span>
+      </div>
+      <div class="locale">
+        <a href="./japan.html" title="Japan">Japan</a>
       </div>
     </div>
     <div class="show-phone no-filter">
@@ -598,30 +601,6 @@
     </div>
   </footer>
 </body>
+<script src="js/index.js"></script>
 
 </html>
-<script>
-  var close = document.querySelector('.close')
-  var open = document.querySelector('.open')
-  var body = document.querySelector('body')
-  var a = document.querySelectorAll('.nav-box a')
-  close.addEventListener('click', function () {
-    body.classList.toggle('isOpen')
-  }, false)
-  open.addEventListener('click', function () {
-    body.classList.toggle('isOpen')
-  }, false)
-  a.forEach(e => {
-    e.addEventListener('click', function () {
-      body.classList.toggle('isOpen')
-    }, false)
-  })
-  var player = new SVGA.Player('#demoCanvas');
-  var parser = new SVGA.Parser('#demoCanvas'); // 如果你需要支持 IE6+，那么必须把同样的选择器传给 Parser。
-  parser.load('./image/eats2x.svga', function (videoItem) {
-    player.setVideoItem(videoItem);
-    player.startAnimation();
-  })
-
-
-</script>
