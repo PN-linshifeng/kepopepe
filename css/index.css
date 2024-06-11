@@ -900,7 +900,8 @@ header .show-phone {
   display: flex;
   justify-content: center;
   gap: 10px;
-  width: 300px;
+  width: 350px;
+  line-height: 30px;
 }
 .copyright .ft .icon span:nth-child(1) {
   background: rgb(51, 51, 51);
@@ -909,6 +910,8 @@ header .show-phone {
   border-radius: 15px;
   padding: 0 10px;
   font-size: 14px;
+  display: flex;
+  gap: 7px;
 }
 .copyright .ft .Contract {
   flex: 1;
